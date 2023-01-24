@@ -5,16 +5,16 @@ import java.util.Scanner;
 public class PairityChecking {
 
 	public static void main(String[] args) {
-		System.out.print("Введите целое число: ");
+		System.out.print("Input an int number: ");
 		Scanner scan = new Scanner(System.in);
 		boolean checkResult;
 		
 		if(scan.hasNextInt()) {
 			checkResult = checkEven(scan.nextInt());
-			System.out.println(checkResult == true ? "Введенное число - парное!" : "Введенное число - непарное!");
+			System.out.println(checkResult == true ? "Inputted number is even!" : "Inputted number is odd!");
 		}
 		else {
-			System.err.println("Вы ввели не целое число!");
+			System.err.println("Inputted number is not an int!");
 		}
 	}
 	
